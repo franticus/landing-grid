@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Главная страница</title>
+    @@include('./layouts/default.html')
+  </head>
+  <body>
+    <div
+      class="hero"
+      style="background-image: url('./images/content/hero-bg.jpg')"
+    >
+      @@include('../blocks/modules/header/header.html')
+      <div class="container">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            <div><span class="marked">Lorem ipsum</span> dolor sit</div>
+            <div>ametconsectetur <span class="marked">adipiscing</span></div>
+          </h1>
+          <ul class="hero__desc">
+            <li class="hero__desc-item">At vero eos et accusamus et iusto odio dignissimos ducimus!</li>
+            <li class="hero__desc-item">- Totam rem aperiam eaque ipsa</li>
+            <li class="hero__desc-item">- Sit voluptatem accusantium doloremque laudantium</li>
+            <li class="hero__desc-item">- Sed ut perspiciatis, unde omnis iste natus error</li>
+          </ul>
+          <div class="hero__buttons">
+            <button class="btn btn-active">Заказать</button>
+            <button class="btn">Подробнее</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>main</main>
+
+    @@include('../blocks/modules/footer/footer.html')
+    <script src="js/vendor/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

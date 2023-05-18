@@ -1,0 +1,11 @@
+.header {
+  height: 100px;
+  display: flex;
+  background: $black_transparent;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

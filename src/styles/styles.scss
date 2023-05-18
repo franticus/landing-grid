@@ -1,0 +1,115 @@
+
+@import "utils/vars.scss";
+@import "utils/mixins";
+@import "vendor/libs";
+@import "base/fonts";
+@import "base/general";
+@import "../blocks/components/components";
+@import "../blocks/modules/modules";
+
+.btn {
+  width: 183px;
+  height: 43px;
+  left: 376px;
+  top: 604px;
+  background: $white;
+  border: 1px solid #6f6d7b;
+  border-radius: 4px;
+
+  &:hover {
+    cursor: pointer;
+    background: $primary;
+    color: $white;
+  }
+
+  &-active {
+    background: $primary;
+    color: $white;
+  }
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 70vh;
+    gap: 80px;
+    flex: 1;
+  }
+
+  &__title {
+    font-size: 48px;
+    line-height: 58px;
+    text-transform: uppercase;
+    color: $black;
+
+    .marked {
+      color: $primary;
+    }
+  }
+
+  &__desc {
+    font-size: 20px;
+    line-height: 24px;
+    color: $black;
+
+    &-item:first-child {
+      font-weight: 600;
+    }
+
+    &-item {
+      margin-bottom: 5px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 30px;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+  }
+}
+
+.logo {
+  display: block;
+  width: 246px;
+  min-width: 256px;
+}
+
+.main-nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: $white;
+
+    &:hover {
+      cursor: pointer;
+      color: $primary;
+    }
+  }
+}
