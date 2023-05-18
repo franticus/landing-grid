@@ -16,7 +16,9 @@
   },
   "author": "fenq2",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "module": "^1.2.5"
+  },
   "devDependencies": {
     "@babel/core": "^7.10.3",
     "@babel/preset-env": "^7.10.3",
