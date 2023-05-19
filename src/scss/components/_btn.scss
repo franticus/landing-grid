@@ -28,6 +28,12 @@
     color: var(--light-color);
     background: var(--primary-color);
   }
+
+  &--active {
+    border: 1px solid var(--light-color);
+    color: var(--light-color);
+    background: var(--primary-color);
+  }
 }
 
 .btn.focus-visible {
