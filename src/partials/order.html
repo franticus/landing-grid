@@ -1,12 +1,54 @@
 <section class="order">
   <div class="container order">
     <form action="#" class="form order__form">
-      <select class="input-reset order__input order__input--select">
-        <option selected disabled>Выберите тип системы</option>
-        <option>Вариант 1</option>
-        <option>Вариант 2</option>
-        <option>Вариант 3</option>
-      </select>
+      <div class="input-reset order__input order__input--select order__select" data-state="">
+        <div class="order__select__title" data-default="Option 0">Выберите тип системы</div>
+        <div class="order__select__content">
+          <input
+            id="singleSelect0"
+            class="order__select__input"
+            type="radio"
+            name="singleSelect"
+            checked
+          />
+          <label for="singleSelect0" class="order__select__label">Option 0</label>
+          <input
+            id="singleSelect1"
+            class="order__select__input"
+            type="radio"
+            name="singleSelect"
+          />
+          <label for="singleSelect1" class="order__select__label">Option 1</label>
+          <input
+            id="singleSelect2"
+            class="order__select__input"
+            type="radio"
+            name="singleSelect"
+          />
+          <label for="singleSelect1" class="order__select__label">Option 2</label>
+          <input
+            id="singleSelect3"
+            class="order__select__input"
+            type="radio"
+            name="singleSelect"
+          />
+          <label for="singleSelect1" class="order__select__label">Option 3</label>
+          <input
+            id="singleSelect4"
+            class="order__select__input"
+            type="radio"
+            name="singleSelect"
+          />
+          <label for="singleSelect1" class="order__select__label">Option 4</label>
+          <input
+            id="singleSelect5"
+            class="order__select__input"
+            type="radio"
+            name="singleSelect"
+          />
+          <label for="singleSelect1" class="order__select__label">Option 5</label>
+        </div>
+      </div>
       <input
         type="email"
         class="input-reset order__input order__input--mail"
@@ -32,9 +74,10 @@
           value="75"
         />
       </div>
-      <button class="btn btn-reset order__btn order__btn--attach">
+      <input type="file" id="file-input" style="display: none;">
+      <label for="file-input" class="btn btn-reset order__btn order__btn--attach file-label">
         <img src="img/svg/attach.svg" alt="attach" />&nbsp; Прикрепить файл
-      </button>
+      </label>
       <button class="btn btn-reset order__btn order__btn--send btn--active">
         Отправить
       </button>
