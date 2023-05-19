@@ -1,7 +1,6 @@
 /* stylelint-disable declaration-block-no-redundant-longhand-properties */
 .order {
   color: var(--light-color);
-  background: var(--steps-bg-color);
 
   &__form {
     display: grid;
@@ -77,6 +76,10 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--light-color);
   }
 }
 

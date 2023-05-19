@@ -8,8 +8,10 @@
     @include('partials/header.html')
     <main class="main">
       @include('partials/hero.html')
-      @include('partials/steps.html')
-      @include('partials/order.html')
+      <section class="order__bg">
+        @include('partials/steps.html')
+        @include('partials/order.html')
+      </section>
     </main>
     @include('partials/footer.html')
   </div>

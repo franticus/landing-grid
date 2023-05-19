@@ -126,3 +126,11 @@ button {
 .marked {
   color: var(--primary-color);
 }
+
+.order__bg {
+  background: var(--steps-bg-color);
+  background-image: url("../img/map-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
