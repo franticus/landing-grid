@@ -1,6 +1,9 @@
-# Gulp - сборка MaxGraph
+# Gulp - сборка
 
 > Используется Gulp 4
+
+## Deploy https://franticus.github.io/landing-grid/
+git commit -m "Deploy to gh-pages"
 
 ## Начало работы
 

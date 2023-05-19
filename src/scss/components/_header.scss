@@ -1,0 +1,51 @@
+/* stylelint-disable order/order */
+.header {
+  padding: 37px 0;
+  background-color: var(--header-bg-color);
+
+  &__container {
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &--position {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+  }
+}
+
+.nav {
+  align-items: center;
+
+  &__list {
+    align-items: center;
+    gap: 60px;
+  }
+
+  &__link {
+    font-size: var(--link-size);
+    line-height: 16px;
+    text-transform: uppercase;
+    color: var(--light-color);
+
+    &:focus {
+      outline: none;
+    }
+
+    @include hover {
+      color: var(--primary-color);
+    }
+
+    &:active {
+      color: var(--primary-color);
+    }
+  }
+}
+
+.nav__link.focus-visible {
+  outline: 1px solid var(--primary-color);
+  outline-offset: 3px;
+}

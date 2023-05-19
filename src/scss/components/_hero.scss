@@ -1,0 +1,48 @@
+.hero {
+  padding-top: 203px;
+  min-height: 850px;
+  color: var(--dark-color);
+  background-image: url("../../img/hero-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__content {
+    grid-column: 8 span;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 80px;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+    white-space: pre-line;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    flex-direction: column;
+    margin-bottom: 80px;
+    gap: 10px;
+  }
+
+  &__item {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--dark-color);
+
+    &:first-child {
+      font-weight: 600;
+    }
+  }
+
+  &_btns {
+    gap: 30px;
+  }
+}
+
+.marked {
+  color: var(--primary-color);
+}

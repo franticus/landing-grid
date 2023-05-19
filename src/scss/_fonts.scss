@@ -1,1 +1,4 @@
-// @include font-face("Muller", "../fonts/MullerRegular", 400, normal);
+@include font-face("Lato", "../fonts/LatoRegular", 400, normal);
+@include font-face("Lato", "../fonts/LatoLight", 300, light);
+@include font-face("Lato", "../fonts/LatoBold", 600, bold);
+@include font-face("Lato", "../fonts/LatoBLack", 900, bolder);

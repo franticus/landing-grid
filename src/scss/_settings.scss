@@ -10,7 +10,7 @@ html {
 
 .page {
   height: 100%;
-  font-family: var(--font-family, sans-serif);
+  font-family: var(--font-family);
   -webkit-text-size-adjust: 100%;
 }
 
@@ -29,6 +29,13 @@ img {
 
 a {
   text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+button {
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .site-container {
@@ -104,4 +111,14 @@ a {
 
 .page--ios .dis-scroll {
   position: relative;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+  column-gap: var(--offset);
+  grid-template-columns: repeat(12, 1fr);
 }

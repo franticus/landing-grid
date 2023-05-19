@@ -1,0 +1,35 @@
+/* stylelint-disable order/order */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 15px;
+  width: 183px;
+  font-size: var(--link-size);
+  line-height: 16px;
+  text-transform: uppercase;
+  color: var(--dark-color);
+  background: var(--light-color);
+
+  &:focus {
+    outline: none;
+  }
+
+  @include hover {
+    border: 1px solid var(--light-color);
+    color: var(--light-color);
+    background: var(--primary-color);
+  }
+
+  &:active {
+    border: 1px solid var(--primary-color);
+    color: var(--light-color);
+    background: var(--primary-color);
+  }
+}
+
+.btn.focus-visible {
+  border: 1px solid var(--primary-color);
+}
