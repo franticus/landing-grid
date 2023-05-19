@@ -122,3 +122,7 @@ button {
   column-gap: var(--offset);
   grid-template-columns: repeat(12, 1fr);
 }
+
+.marked {
+  color: var(--primary-color);
+}
