@@ -3,7 +3,10 @@
 > Используется Gulp 4
 
 ## Deploy https://franticus.github.io/landing-grid/
+npm run build
+git add .
 git commit -m "Deploy to gh-pages"
+git subtree push --prefix app origin gh-pages
 
 ## Начало работы
 
