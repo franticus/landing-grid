@@ -11,14 +11,31 @@
       ". send .";
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    padding-bottom: 150px;
+    padding-bottom: 120px;
+
+    @include tablet {
+      padding-bottom: 100px;
+    }
+
+    @include mobile {
+      grid-template-areas:
+        "select"
+        "mail"
+        "name"
+        "range"
+        "attach"
+        "send";
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 1fr);
+      padding-bottom: 120px;
+    }
   }
 
   &__input {
     border: 1px solid var(--light-color);
     border-radius: 3px;
     padding: 0 10px;
-    width: 370px;
+    width: 100%;
     height: 48px;
     font-weight: 400;
     font-size: 18px;
@@ -50,7 +67,7 @@
   }
 
   &__btn {
-    width: 370px;
+    width: 100%;
     height: 48px;
     font-size: 15px;
     line-height: 18px;
@@ -114,7 +131,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 .order__select {
   position: relative;
   margin: 0 auto;
-  width: 370px;
+  width: 100%;
   height: 48px;
 
   &[data-state="active"] {

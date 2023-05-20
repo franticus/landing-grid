@@ -24,8 +24,15 @@
   }
 
   &__list {
-    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     width: 100%;
+    gap: 30px;
+
+    @include tablet {
+      gap: 60px;
+    }
   }
 
   &__item {
@@ -37,6 +44,7 @@
 
     &--dots {
       position: relative;
+      display: none;
 
       &::after {
         content: "";

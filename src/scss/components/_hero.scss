@@ -1,5 +1,5 @@
 .hero {
-  padding-top: 203px;
+  padding: 203px 0;
   min-height: 850px;
   color: var(--dark-color);
   background-image: url("../img/hero-bg.jpg");
@@ -40,5 +40,9 @@
 
   &_btns {
     gap: 30px;
+  }
+
+  @include small-tablet {
+    background-position-x: 65%;
   }
 }
