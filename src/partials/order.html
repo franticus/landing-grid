@@ -52,12 +52,15 @@
       <input
         type="email"
         name="email"
+        aria-label="email"
         class="input-reset order__input order__input--mail"
         placeholder="Ваш e-mail"
       />
       <input
         type="text"
         name="name"
+        id="name-input"
+        aria-label="your name"
         class="input-reset order__input order__input--name"
         placeholder="Ваше имя"
       />
@@ -71,6 +74,8 @@
         <input
           type="range"
           class="order__input--line js-range-input"
+          id="range-input"
+          aria-label="range"
           min="0"
           max="100"
           value="75"
@@ -79,6 +84,7 @@
       <input
         type="file"
         name="attach"
+        aria-label="attach file"
         id="file-input"
         style="display: none;">
       <label for="file-input" class="btn btn-reset order__btn order__btn--attach file-label">
