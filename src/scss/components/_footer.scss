@@ -1,0 +1,85 @@
+/* stylelint-disable order/order */
+/* stylelint-disable declaration-block-no-redundant-longhand-properties */
+.footer {
+  padding: 30px 0;
+  background: var(--steps-bg-color);
+
+  &__container {
+    grid-gap: 20px;
+    grid-template-areas: "policy fdivider payment sdivider social";
+    grid-template-columns: 1fr auto 1fr auto 1fr;
+  }
+
+  &__section {
+    width: 100%;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: var(--light-color);
+
+    &--policy {
+      grid-area: policy;
+    }
+
+    &--payment {
+      grid-area: payment;
+      padding: 0 20px;
+      font-size: 13px;
+      line-height: 16px;
+      color: var(--payment-color);
+    }
+
+    &--social {
+      grid-area: social;
+    }
+
+    &--divider {
+      width: 1px;
+      height: 18px;
+      background: var(--payment-color);
+
+      &-first {
+        grid-area: fdivider;
+      }
+
+      &-second {
+        grid-area: sdivider;
+      }
+    }
+  }
+
+  &__list {
+    align-items: center;
+    justify-content: center;
+    gap: 38px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    gap: 10px;
+  }
+
+  &__link {
+    color: var(--light-color);
+
+    &:focus {
+      outline: none;
+    }
+
+    @include hover {
+      color: var(--primary-color);
+    }
+
+    &:active {
+      color: var(--primary-color);
+    }
+  }
+}
+
+.footer__link.focus-visible {
+  outline: 1px solid var(--primary-color);
+  outline-offset: 3px;
+}
