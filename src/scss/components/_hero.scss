@@ -19,6 +19,11 @@
     line-height: 58px;
     white-space: pre-line;
     text-transform: uppercase;
+
+    @include small-tablet {
+      font-size: 38px;
+      line-height: 48px;
+    }
   }
 
   &__list {
@@ -44,5 +49,10 @@
 
   @include small-tablet {
     background-position-x: 65%;
+  }
+
+  @include mobile {
+    padding: 100px 0;
+    background-position-x: 60%;
   }
 }
