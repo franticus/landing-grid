@@ -64,6 +64,16 @@
     &--line {
       width: 100%;
     }
+
+    @include small-tablet {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    @include mobile {
+      font-size: 18px;
+      line-height: 22px;
+    }
   }
 
   &__btn {

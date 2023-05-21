@@ -24,13 +24,13 @@
   }
 
   &__list {
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     width: 100%;
     gap: 30px;
 
     @include tablet {
+      flex-wrap: wrap;
       gap: 60px;
     }
   }
@@ -40,17 +40,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 209px;
+    width: 20%;
+    height: 182px;
 
     &--dots {
       position: relative;
-      display: none;
+      display: block;
 
-      &::after {
+      &::before {
         content: "";
         position: absolute;
-        left: 50%;
-        top: 40px;
+        left: 0;
+        bottom: 25px;
         width: 110px;
         height: 20px;
         min-width: 50px;
@@ -60,6 +61,27 @@
         background-repeat: no-repeat;
         transform: translate(-50%);
       }
+
+      &-hidden {
+        @include tablet {
+          display: none;
+        }
+      }
+
+      @include tablet {
+        flex-wrap: nowrap;
+        gap: 40px;
+      }
+
+      @include small-tablet {
+        display: none;
+        flex-wrap: wrap;
+        gap: 60px;
+      }
+    }
+
+    @include small-tablet {
+      width: 203px;
     }
   }
 
@@ -71,6 +93,7 @@
     border-radius: 50%;
     width: 100px;
     height: 100px;
+    min-height: 100px;
     background: var(--primary-color);
   }
 
