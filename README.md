@@ -3,15 +3,15 @@
 > Используется Gulp 4
 
 ## Deploy https://franticus.github.io/landing-grid/
-`npm run build`
-`git add .`
-`git commit -m "Deploy to gh-pages"`
-`git subtree push --prefix app origin gh-pages`
+> `npm run build`
+> `git add .`
+> `git commit -m "Deploy to gh-pages"`
+> `git subtree push --prefix app origin gh-pages`
 
-![Screenshot](https://github.com/franticus/landing-grid/assets/70944846/80e9c7ac-c169-4419-abf6-182329755934)
+![Screenshot](https://github.com/franticus/landing-grid/assets/70944846/67e6e29a-d099-4fdd-a9ef-84d0ad4c4b35)
 ![Screenshot](https://github.com/franticus/landing-grid/assets/70944846/284e9641-337f-4168-832b-bc1497d3c47e)
 ![Screenshot](https://github.com/franticus/landing-grid/assets/70944846/22ca121c-893a-43cd-8ac7-a221dbf2c78b)
-![Screenshot](https://github.com/franticus/landing-grid/assets/70944846/67e6e29a-d099-4fdd-a9ef-84d0ad4c4b35)
+![Screenshot](https://github.com/franticus/landing-grid/assets/70944846/80e9c7ac-c169-4419-abf6-182329755934)
 
 ## Начало работы
 
