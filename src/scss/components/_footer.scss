@@ -75,10 +75,13 @@
   }
 
   &__list {
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 38px;
+
+    @include tablet {
+      flex-wrap: wrap;
+    }
 
     @include small-tablet {
       gap: 8px;

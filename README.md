@@ -1,12 +1,12 @@
-# Gulp
+# Landing-grid markup example
 
 > Используется Gulp 4
 
 ## Deploy https://franticus.github.io/landing-grid/
-npm run build
-git add .
-git commit -m "Deploy to gh-pages"
-git subtree push --prefix app origin gh-pages
+`npm run build`
+`git add .`
+`git commit -m "Deploy to gh-pages"`
+`git subtree push --prefix app origin gh-pages`
 
 ![Screenshot](https://github.com/franticus/landing-grid/assets/70944846/80e9c7ac-c169-4419-abf6-182329755934)
 ![Screenshot](https://github.com/franticus/landing-grid/assets/70944846/284e9641-337f-4168-832b-bc1497d3c47e)
