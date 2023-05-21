@@ -23,6 +23,13 @@
   &__list {
     align-items: center;
     gap: 60px;
+
+    @include small-tablet {
+      flex-direction: column;
+      align-items: flex-start;
+      overflow-y: auto;
+      margin-left: 80px;
+    }
   }
 
   &__link {
@@ -47,9 +54,28 @@
       color: var(--primary-color);
     }
   }
+
+  @include small-tablet {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 11;
+    width: 60%;
+    height: 100vh;
+    min-width: 260px;
+    background: var(--steps-bg-color);
+    visibility: hidden;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  }
 }
 
 .nav__link.focus-visible {
   outline: 1px solid var(--primary-color);
   outline-offset: 3px;
+}
+
+.nav.menu--active {
+  visibility: visible;
+  transform: none;
 }

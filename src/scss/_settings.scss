@@ -1,3 +1,5 @@
+/* stylelint-disable order/order */
+/* stylelint-disable custom-property-empty-line-before */
 html {
   box-sizing: border-box;
 }
@@ -133,4 +135,17 @@ button {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.burger {
+  @include burger;
+
+  --burger-height: 20px;
+
+  display: none;
+  color: var(--light-color);
+
+  @include small-tablet {
+    display: block;
+  }
 }
